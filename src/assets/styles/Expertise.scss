@@ -1,0 +1,27 @@
+/* --- Reusable heading style (matches Projects heading) --- */
+.section-heading {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+/* Purple fading underline */
+.section-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 90px;     /* same as your Projects underline */
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #a855f7,
+    #7c3aed,
+    rgba(0, 0, 0, 0)
+  );
+  opacity: 0.9;
+}

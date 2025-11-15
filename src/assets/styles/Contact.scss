@@ -1,0 +1,83 @@
+.simple-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 40px 0 70px;
+}
+
+.contact-simple-text {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.calendly-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #c4b5fd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.calendly-link:hover {
+  text-decoration: underline;
+}
+
+/* Social icons row – all in one line, wraps nicely on mobile */
+.simple-icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Base circle style */
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #e5e7eb;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.icon-circle svg {
+  font-size: 1.25rem;
+}
+
+/* Hover effect */
+.icon-circle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+  border-color: #a855f7;
+  background: radial-gradient(circle at top, rgba(168, 85, 247, 0.35), rgba(15, 23, 42, 1));
+}
+
+/* X + Snapchat text styling */
+.icon-circle span {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Optional slight brand hints */
+.icon-circle.linkedin { background: #0a66c2; }
+.icon-circle.github { background: #111827; }
+.icon-circle.instagram {
+  background: linear-gradient(135deg, #ec4899, #f97316, #eab308);
+}
+.icon-circle.x-icon { background: #000000; }
+.icon-circle.snapchat { background: #facc15; color: #111827; }
+
+@media (max-width: 600px) {
+  .simple-contact {
+    padding: 30px 0 50px;
+  }
+}
